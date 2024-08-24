@@ -1,0 +1,1 @@
+pscp -pw Enten3112 -r Z:\Lichtwecker\Lichtwecker\bin\Debug\net8.0\ nobicore@192.168.175.40:/home/nobicore/Documents/lichtwecker/
