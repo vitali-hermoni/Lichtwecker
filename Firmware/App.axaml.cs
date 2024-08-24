@@ -3,10 +3,10 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Data.Core;
 using Avalonia.Data.Core.Plugins;
 using Avalonia.Markup.Xaml;
-using Lichtwecker.ViewModels;
-using Lichtwecker.Views;
+using Firmware.ViewModels;
+using Firmware.Views;
 
-namespace Lichtwecker
+namespace Firmware
 {
     public partial class App : Application
     {

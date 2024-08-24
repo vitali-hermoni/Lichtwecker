@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
 
-namespace Lichtwecker.ViewModels;
+namespace Firmware.ViewModels;
 
 public class ViewModelBase : INotifyPropertyChanged
 {

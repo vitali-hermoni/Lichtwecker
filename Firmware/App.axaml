@@ -1,7 +1,9 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             x:Class="Lichtwecker.App"
-             xmlns:local="using:Lichtwecker"
+			 xmlns:view="clr-namespace:Firmware.Views"
+			 xmlns:vm="clr-namespace:Firmware.ViewModels"
+             x:Class="Firmware.App"
+             xmlns:local="using:Firmware"
              RequestedThemeVariant="Default">
              <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 
@@ -12,4 +14,16 @@
     <Application.Styles>
         <FluentTheme />
     </Application.Styles>
+
+	<Application.DataTemplates>
+		<DataTemplate DataType="{x:Type vm:ClockViewModel}">
+			<view:ClockView />
+		</DataTemplate>
+
+		<DataTemplate DataType="{x:Type vm:RadioViewModel}">
+			<view:RadioView />
+		</DataTemplate>
+	</Application.DataTemplates>
+
+	
 </Application>

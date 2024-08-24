@@ -1,9 +1,9 @@
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using Lichtwecker.ViewModels;
+using Firmware.ViewModels;
 using System;
 
-namespace Lichtwecker
+namespace Firmware
 {
     public class ViewLocator : IDataTemplate
     {

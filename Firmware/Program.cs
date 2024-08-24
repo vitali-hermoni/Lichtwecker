@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace Lichtwecker
+namespace Firmware
 {
     internal sealed class Program
     {

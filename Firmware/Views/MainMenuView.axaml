@@ -1,0 +1,58 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:vlc="clr-namespace:LibVLCSharp.Avalonia;assembly=LibVLCSharp.Avalonia"
+			 xmlns:vm="clr-namespace:Firmware.ViewModels"
+			 x:Class="Firmware.Views.MainMenuView"
+			 x:DataType="vm:MainMenuViewModel"
+			 Background="White"
+			 d:DesignWidth="800" d:DesignHeight="480">
+
+	<Design.DataContext>
+		<vm:MainMenuViewModel/>
+	</Design.DataContext>
+
+
+	<Grid Background="Black" Margin="20">
+		<Grid Margin="40 0 0 0">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="240"/>
+				<ColumnDefinition Width="240"/>
+				<ColumnDefinition Width="230"/>
+			</Grid.ColumnDefinitions>
+
+			<Button 
+				Content="CLOCK" 
+				FontSize="30" 
+				HorizontalContentAlignment="Center" 
+				VerticalContentAlignment="Center" 
+				Background="White" 
+				Width="200" 
+				Height="200"
+				Command="{Binding ClockCommand}"/>
+			<Button 
+				Grid.Column="1" 
+				Content="ALARM"
+				FontSize="30"
+				HorizontalContentAlignment="Center"
+				VerticalContentAlignment="Center"
+				Background="White"
+				Width="200"
+				Height="200"
+				Command="{Binding AlarmCommand}"/>
+
+			<Button
+				Grid.Column="2"
+				Content="RADIO"
+				FontSize="30"
+				HorizontalContentAlignment="Center"
+				VerticalContentAlignment="Center"
+				Background="White"
+				Width="200"
+				Height="200"
+				Command="{Binding RadioCommand}"/>
+			
+		</Grid>
+	</Grid>
+</UserControl>

@@ -1,1 +1,9 @@
-pscp -pw Enten3112 -r Z:\Lichtwecker\Lichtwecker\bin\Debug\net8.0\ nobicore@192.168.175.40:/home/nobicore/Documents/lichtwecker/
+pscp -pw Enten3112 -r Z:\Lichtwecker\Firmware\bin\Debug\net8.0\ nobicore@192.168.175.40:/home/nobicore/Documents/lichtwecker/
+
+
+export DISPLAY=:0
+echo $DISPLAY
+unclutter -idle 5 &
+
+
+amixer -D pulse sset Master 30%
